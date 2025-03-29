@@ -1,7 +1,459 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Deweloperskie | Front-end & Back-end</title>
+    <meta name="description" content="Profesjonalne portfolio deweloperskie z projektami front-end i back-end">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>Ładowanie portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Nawigacja -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Dev<span>Portfolio</span></a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">O mnie</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Umiejętności</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projekty</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Kontakt</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sekcja Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h3 class="hero-subtitle">Cześć, jestem</h3>
+                    <h1 class="hero-title">Jan Kowalski</h1>
+                    <h2 class="hero-role">Full Stack Developer</h2>
+                    <p class="hero-description">Tworzę nowoczesne, responsywne strony internetowe i aplikacje webowe z naciskiem na wydajność i najlepsze praktyki.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Moje Projekty</a>
+                        <a href="#contact" class="btn btn-secondary">Skontaktuj się</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="https://via.placeholder.com/400x400" alt="Jan Kowalski - Full Stack Developer" class="profile-img">
+                        <div class="tech-icons">
+                            <i class="fab fa-html5" title="HTML5"></i>
+                            <i class="fab fa-css3-alt" title="CSS3"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <i class="fab fa-react" title="React"></i>
+                            <i class="fab fa-node-js" title="Node.js"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja O mnie -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">O <span>mnie</span></h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x500" alt="O mnie" class="about-img">
+                </div>
+                <div class="about-text">
+                    <h3>Kim jestem?</h3>
+                    <p>Jestem pasjonatem programowania z ponad 5-letnim doświadczeniem w tworzeniu stron internetowych i aplikacji webowych. Specjalizuję się w technologiach JavaScript, React i Node.js.</p>
+                    <p>Moja przygoda z programowaniem rozpoczęła się podczas studiów informatycznych i od tamtej pory nieustannie rozwijam swoje umiejętności, śledząc najnowsze trendy w rozwoju oprogramowania.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span>Imię:</span>
+                            <p>Jan Kowalski</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span>
+                            <p>jan.kowalski@example.com</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Doświadczenie:</span>
+                            <p>5+ lat</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Telefon:</span>
+                            <p>+48 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+                    </div>
+                    <a href="#" class="btn btn-primary">Pobierz CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Umiejętności -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Moje <span>umiejętności</span></h2>
+            <div class="skills-content">
+                <div class="skills-description">
+                    <h3>Moje umiejętności i doświadczenie</h3>
+                    <p>Poniżej znajdziesz technologie, z którymi pracuję na co dzień. Każdego dnia staram się poszerzać swoją wiedzę i rozwijać nowe umiejętności.</p>
+                </div>
+                <div class="skills-bars">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress html"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS3/SASS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress css"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress js"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress react"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress node"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>MongoDB</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress mongo"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-icons">
+                    <div class="icon-item" data-tooltip="Git">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="icon-item" data-tooltip="Webpack">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="icon-item" data-tooltip="REST API">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="icon-item" data-tooltip="Responsywność">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="icon-item" data-tooltip="TypeScript">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="icon-item" data-tooltip="Jest">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Projekty -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Moje <span>projekty</span></h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Wszystkie</button>
+                <button class="filter-btn" data-filter="frontend">Front-end</button>
+                <button class="filter-btn" data-filter="backend">Back-end</button>
+                <button class="filter-btn" data-filter="fullstack">Full-stack</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Projekt 1 -->
+                <div class="project-item" data-category="fullstack">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Projekt 1">
+                        <div class="project-links">
+                            <a href="#" class="link-icon" title="Podgląd"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="link-icon" title="Kod źródłowy"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Aplikacja E-commerce</h3>
+                        <p>Pełnoprawna platforma sklepowa z koszykiem, płatnościami i panelem admina.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 2 -->
+                <div class="project-item" data-category="frontend">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Projekt 2">
+                        <div class="project-links">
+                            <a href="#" class="link-icon" title="Podgląd"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="link-icon" title="Kod źródłowy"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Panel Dashboard</h3>
+                        <p>Nowoczesny panel administracyjny z wykresami i statystykami w czasie rzeczywistym.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Chart.js</span>
+                            <span>SASS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 3 -->
+                <div class="project-item" data-category="backend">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Projekt 3">
+                        <div class="project-links">
+                            <a href="#" class="link-icon" title="Podgląd"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="link-icon" title="Kod źródłowy"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>API dla aplikacji społecznościowej</h3>
+                        <p>RESTful API z autentykacją JWT, obsługą plików i powiadomień w czasie rzeczywistym.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Socket.io</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 4 -->
+                <div class="project-item" data-category="frontend">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Projekt 4">
+                        <div class="project-links">
+                            <a href="#" class="link-icon" title="Podgląd"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="link-icon" title="Kod źródłowy"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Landing Page dla startupu</h3>
+                        <p>Nowoczesna strona landing page z animacjami i formularzem kontaktowym.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>GSAP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 5 -->
+                <div class="project-item" data-category="fullstack">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Projekt 5">
+                        <div class="project-links">
+                            <a href="#" class="link-icon" title="Podgląd"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="link-icon" title="Kod źródłowy"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>System zarządzania treścią</h3>
+                        <p>Kompleksowy CMS z edytorem WYSIWYG i wielojęzycznością.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekt 6 -->
+                <div class="project-item" data-category="backend">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Projekt 6">
+                        <div class="project-links">
+                            <a href="#" class="link-icon" title="Podgląd"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="link-icon" title="Kod źródłowy"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Microservice Architektura</h3>
+                        <p>System rozproszony z komunikacją między serwisami przez RabbitMQ.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Docker</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-more">
+                <a href="#" class="btn btn-secondary">Zobacz więcej projektów</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Kontakt -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Skontaktuj się <span>ze mną</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Dane kontaktowe</h3>
+                    <p>Jeśli masz pytanie lub chcesz omówić potencjalną współpracę, skorzystaj z poniższych danych lub wyślij wiadomość przez formularz.</p>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Lokalizacja:</h4>
+                            <p>Warszawa, Polska</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email:</h4>
+                            <p>jan.kowalski@example.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Telefon:</h4>
+                            <p>+48 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Godziny pracy:</h4>
+                            <p>Pon - Pt: 9:00 - 17:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Imię i nazwisko" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Temat" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Wiadomość" required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+                    </form>
+                    <div id="formSuccess" class="form-success">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Twoja wiadomość została wysłana! Skontaktuję się z Tobą najszybciej jak to możliwe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#" class="logo">Dev<span>Portfolio</span></a>
+                    <p>Nowoczesne portfolio full stack developera specjalizującego się w JavaScript, React i Node.js.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-codepen"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Szybkie linki</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">O mnie</a></li>
+                        <li><a href="#skills">Umiejętności</a></li>
+                        <li><a href="#projects">Projekty</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Zapisz się do newslettera, aby otrzymywać informacje o nowych projektach i artykułach.</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Twój email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> DevPortfolio. Wszelkie prawa zastrzeżone.</p>
+                <p>Stworzone z <i class="fas fa-heart"></i> przez Jana Kowalskiego</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Przycisk powrotu do góry -->
+    <a href="#" class="back-to-top" aria-label="Powrót do góry">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
